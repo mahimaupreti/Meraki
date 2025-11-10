@@ -152,28 +152,26 @@ const Hero = () => {
 
         {/* Top-left heading */}
         <div className="absolute top-18 left-5 z-40">
-<h1 className="special-font text-[#D0FF11] !text-[#D0FF11] text-[112px] ">
+<h1 className="font-SpecialBold font-extrabold text-[#ffffff] text-[100px] uppercase tracking-tight">
             Innovative
           </h1>
         </div>
 
         {/* Center heading */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-32 z-40 text-center">
-<h1 className="special-font text-[#D0FF11] !text-[#D0FF11] text-[112px]">
+<h1 className="font-SpecialBold font-extrabold text-[#ffffff] text-[100px] uppercase tracking-tight">
             Design
           </h1>
         </div>
 
         {/* Bottom-right heading */}
-        <h1 className="special-font absolute bottom-16 right-5 z-40 text-[#D0FF11]  !text-[#D0ff11] text-[112px] ">
+        <h1 className="font-SpecialBold font-extrabold text-[#ffffff] text-[100px] uppercase tracking-tight">
           Deliver
         </h1>
 
         {/* Overlay content with button */}
         <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 z-40 text-center">
-          <p className="mb-5 max-w-64 font-robert-regular text-white ">
-            Enter the Metagame Layer <br /> Unleash the Play Economy
-          </p>
+          
 
           <Button
             id="watch-trailer"

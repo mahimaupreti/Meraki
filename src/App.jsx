@@ -20,7 +20,7 @@ function App() {
   });
 
   return (
-    <div className="w-full min-h-screen bg-zinc-900 text-white">
+    <div className="w-full min-h-screen bg-black-900 text-white">
       <Navbar />
       <Hero />
       <HeroSection />

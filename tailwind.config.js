@@ -17,15 +17,16 @@ export default {
       xl: "1440px",
     },
     extend: {
-      fontFamily: {
-        FoundersGroteskCondensed: ["FoundersGroteskCondensed", "sans-serif"],
-        NueueMontreal: ['"NueueMontreal"', "sans-serif"],
-      },
-       height: {
-      'dvh': '100vh',
-    },
-    
-    },
+  fontFamily: {
+    FoundersGroteskCondensed: ["FoundersGroteskCondensed", "sans-serif"],
+    NueueMontreal: ['"NueueMontreal"', "sans-serif"],
+    SpecialBold: ["Poppins", "sans-serif"], // <-- new bold font
+  },
+  height: {
+    dvh: "100vh",
+  },
+},
+
   },
   plugins: ["prettier-plugin-tailwindcss"],
 };

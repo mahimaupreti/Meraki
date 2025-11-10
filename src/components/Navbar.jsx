@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/images/logo.png";
 import { LuMenu } from "react-icons/lu";
 
 function Navbar() {
@@ -8,7 +8,7 @@ function Navbar() {
     <div className="sticky bg-zinc-900/40 backdrop-blur-md top-0 z-[999] py-4 sm:py-5">
       <div className="container w-full font-NueueMontreal flex items-center justify-between">
         <div className="logo">
-          <img src={Logo} className="w-12" alt="ochi logo" />
+          <img src={Logo} className="w-12" alt="meraki logo" />
         </div>
         <div className="links items-center gap-10 hidden md:flex">
           {navLinks.map((item, index) => (
