@@ -82,7 +82,8 @@ const Hero = () => {
     });
   });
 
-  const getVideoSrc = (index) => `/src/assets/videos/hero-${index}.mp4`;
+  const getVideoSrc = (index) =>
+    `https://meraki-creations.s3.us-east-1.amazonaws.com/assets/videos/hero-1.mp4`;
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
