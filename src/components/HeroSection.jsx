@@ -36,7 +36,7 @@ function HeroSection() {
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-between border-t-[1px] border-zinc-800 py-5 font-NueueMontreal">
+      <div className="flex items-center justify-between border-t-[1px] border-black py-5 font-NueueMontreal">
        
       </div>
     </div>

@@ -14,11 +14,11 @@ function About() {
        
         <div className="md:flex justify-center gap-10">
           <div className="about-text h-fit">
-            <h1 className="text-4xl mb-4 text-lime-300">Explore Our </h1>
-            <p className="text-base sm:text-xl text-zinc-200 tracking-wide">
-             Industry Expertise The boundless potential of custom software at your service. We will transform your ideas into reality through our expertise and technology solutions.
+            <h1 className="text-4xl mb-4 text-lime-300">Explore Our Industry Expertise </h1>
+            <p className="text-base sm:text-xl text-white tracking-wide">
+             The boundless potential of custom software at your service. We will transform your ideas into reality through our expertise and technology solutions.
             </p>
-            <div className="rounded-full flex gap-2 justify-center mt-4 w-fit bg-[#D0FF11] text-zinc-100 px-10 py-3 text-sm tracking-wider uppercase">
+            <div className="rounded-full flex gap-2 justify-center mt-4 w-fit bg-[#D0FF11] text-black px-10 py-3 text-sm tracking-wider uppercase">
               Read more
               <FaArrowUpLong className="rotate-45 origin-center translate-y-[2px]" />
             </div>

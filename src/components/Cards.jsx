@@ -1,39 +1,36 @@
 import React from "react";
+import aImg from "../assets/images/AI.png";
+import bImg from "../assets/images/UXDesign.png";
+import cImg from "../assets/images/Custom_Software.png";
+import dImg from "../assets/images/Quality_Assurance.png";
+import eImg from "../assets/images/Web_App.png";
 
 function Cards() {
+  const cardData = [
+    { src: aImg, bg: "#D0FF11" },
+    { src: bImg, bg: "#293231" },
+    { src: cImg, bg: "#D0FF11" },
+    { src: dImg, bg: "#293231" },
+    { src: eImg, bg: "#D0FF11" },
+  ];
+
   return (
-    <div className="container w-full flex flex-col md:flex-row gap-5 py-20">
-      <div className="card relative flex items-center justify-center lg:w-1/2 md:w-full h-96 bg-[#004D43] rounded-xl">
-        <img
-          src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
-          alt="ochi"
-          className="w-[25%]"
-        />
-        <button className="absolute left-5 bottom-5 px-5 py-2 rounded-full border text-xs sm:text-base font-NueueMontreal border-zinc-200">
-          © 2019–2022
-        </button>
-      </div>
-      <div className="cardcontainer flex gap-5 lg:w-1/2 md:w-full">
-        <div className="card relative flex items-center justify-center w-1/2 h-96 bg-[#293231] rounded-xl">
-          <img
-            src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"
-            alt="ochi"
-            className="w-[50%]"
-          />
-          <button className="absolute left-5 bottom-5 px-5 py-2 rounded-full border text-xs sm:text-base font-NueueMontreal border-zinc-200">
-            © 2019–2022
-          </button>
-        </div>
-        <div className="card relative flex items-center justify-center w-1/2 h-96 bg-[#293231] rounded-xl">
-          <img
-            src="https://ochi.design/wp-content/uploads/2022/04/logo003.png"
-            alt="ochi"
-            className="w-[50%] mix-blend-lighten"
-          />
-          <button className="absolute left-5 bottom-5 px-5 py-2 rounded-full border text-xs sm:text-base font-NueueMontreal border-zinc-200">
-            © 2019–2022
-          </button>
-        </div>
+    <div className="container w-full py-20">
+      {/* Horizontal scroll for small screens */}
+      <div className="flex gap-5 overflow-x-auto lg:overflow-x-visible w-max lg:w-full scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-zinc-800 scroll-smooth">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className="card relative flex-shrink-0 lg:flex-shrink flex items-center justify-center w-80 h-96 rounded-xl overflow-hidden"
+            style={{ backgroundColor: card.bg }}
+          >
+            <img
+              src={card.src}
+              alt={`ochi ${index + 1}`}
+              className={`w-[98%] h-[98%] object-contain ${card.extraClass ? card.extraClass : ""}`}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

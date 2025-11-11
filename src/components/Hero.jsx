@@ -150,35 +150,33 @@ const Hero = () => {
 
         </div>
 
-        {/* Top-left heading */}
-        <div className="absolute top-18 left-5 z-40">
-<h1 className="font-SpecialBold font-extrabold text-[#ffffff] text-[100px] uppercase tracking-tight">
-            Innovative
-          </h1>
-        </div>
+        <div className="pointer-events-none absolute inset-0 z-40">
+          <div className="absolute top-16 left-6">
+            <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[150px] text-6xl">
+              Innovate
+            </h1>
+          </div>
 
-        {/* Center heading */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-32 z-40 text-center">
-<h1 className="font-SpecialBold font-extrabold text-[#ffffff] text-[100px] uppercase tracking-tight">
-            Design
-          </h1>
-        </div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-6">
+  <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[150px] text-6xl">
+    Design
+  </h1>
+  <Button
+    id="watch-trailer"
+    title="trailer"
+    leftIcon={<TiLocationArrow />}
+    containerClass="bg-yellow-300 flex-center gap-1"
+  />
+</div>
 
-        {/* Bottom-right heading */}
-        <h1 className="font-SpecialBold font-extrabold text-[#ffffff] text-[100px] uppercase tracking-tight">
-          Deliver
-        </h1>
 
-        {/* Overlay content with button */}
-        <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 z-40 text-center">
+          <div className="absolute bottom-16 right-6 text-right">
+            <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[150px] text-6xl">
+              Deliver
+            </h1>
+          </div>
+
           
-
-          <Button
-            id="watch-trailer"
-            title="trailer"
-            leftIcon={<TiLocationArrow />}
-            containerClass="bg-yellow-300 flex-center gap-1"
-          />
         </div>
       </div>
     </div>

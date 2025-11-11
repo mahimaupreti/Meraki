@@ -10,6 +10,7 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 
+
 function App() {
   // Locomotive Scroll
   const locomotiveScroll = new LocomotiveScroll({
@@ -20,7 +21,7 @@ function App() {
   });
 
   return (
-    <div className="w-full min-h-screen bg-black-900 text-white">
+    <div className="w-full min-h-screen bg-black text-white">
       <Navbar />
       <Hero />
       <HeroSection />

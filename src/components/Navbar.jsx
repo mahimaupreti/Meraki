@@ -3,7 +3,7 @@ import Logo from "../assets/images/logo.png";
 import { LuMenu } from "react-icons/lu";
 
 function Navbar() {
-  const navLinks = ["Services", "Our Work", "About Us", "Insights", "Contact"];
+  const navLinks = ["Services", "Contact"];
   return (
     <div className="sticky bg-zinc-900/40 backdrop-blur-md top-0 z-[999] py-4 sm:py-5">
       <div className="container w-full font-NueueMontreal flex items-center justify-between">
@@ -15,7 +15,7 @@ function Navbar() {
             <a
               key={index}
               className={`text-md font-light capitalize whitespace-nowrap cursor-pointer ${
-                index === 4 && "ml-[10vw]"
+                index === 2 && "ml-[10vw]"
               }`}
             >
               {item}
