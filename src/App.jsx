@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HeroSection from "./components/HeroSection";
@@ -10,18 +10,33 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 
-
 function App() {
-  // Locomotive Scroll
-  const locomotiveScroll = new LocomotiveScroll({
-    lenisOptions: {
-      smoothTouch: true,
-      touchMultiplier: 1,
-    },
-  });
+  const scrollContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth < 768) {
+      return undefined;
+    }
+
+    const locomotiveScroll = new LocomotiveScroll({
+      el: scrollContainerRef.current || undefined,
+      lenisOptions: {
+        smoothTouch: false,
+        touchMultiplier: 1,
+      },
+    });
+
+    return () => {
+      locomotiveScroll.destroy();
+    };
+  }, []);
 
   return (
-    <div className="w-full min-h-screen bg-black text-white">
+    <div
+      ref={scrollContainerRef}
+      data-scroll-container
+      className="w-full min-h-screen bg-black text-white overflow-x-hidden"
+    >
       <Navbar />
       <Hero />
       <HeroSection />

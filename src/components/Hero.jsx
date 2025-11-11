@@ -152,27 +152,28 @@ const Hero = () => {
         </div>
 
         <div className="pointer-events-none absolute inset-0 z-40">
-          <div className="absolute top-16 left-6">
-            <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[150px] text-6xl">
+          <div className="absolute top-10 left-4 sm:top-16 sm:left-6">
+            <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[56px] leading-none sm:text-[96px] md:text-[120px] lg:text-[150px] text-white">
               Innovate
             </h1>
           </div>
 
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-6">
-  <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[150px] text-6xl">
-    Design
-  </h1>
-  <Button
-    id="watch-trailer"
-    title="trailer"
-    leftIcon={<TiLocationArrow />}
-    containerClass="bg-yellow-300 flex-center gap-1"
-  />
-</div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-4 sm:gap-6">
+            <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[64px] leading-none sm:text-[110px] md:text-[130px] lg:text-[160px] text-white">
+              Design
+            </h1>
+            <div className="pointer-events-auto">
+              <Button
+                id="watch-trailer"
+                title="trailer"
+                leftIcon={<TiLocationArrow />}
+                containerClass="bg-yellow-300 flex-center gap-1 px-6 py-3 text-sm sm:px-8 sm:py-4 sm:text-base"
+              />
+            </div>
+          </div>
 
-
-          <div className="absolute bottom-16 right-6 text-right">
-            <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[150px] text-6xl">
+          <div className="absolute bottom-12 right-4 sm:bottom-16 sm:right-6 text-right">
+            <h1 className="font-SpecialBold font-FoundersGroteskCondensed uppercase text-[56px] leading-none sm:text-[96px] md:text-[120px] lg:text-[150px] text-white">
               Deliver
             </h1>
           </div>
